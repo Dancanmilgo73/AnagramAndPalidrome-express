@@ -14,7 +14,7 @@ palidromemRouter.post("/", (req, res) => {
     }
     return res.status(200).send(false);
   } catch {
-    res.status(500).send("Server Error");
+    res.sendStatus(500);
   }
 });
 
